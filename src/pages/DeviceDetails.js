@@ -41,7 +41,9 @@ function DeviceDetails() {
         !live.timestamp ||
         Date.now() - live.timestamp > 60000;
 
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     useEffect(() => {
+
         loadGuardians();
         loadThresholds();
         loadLive();
